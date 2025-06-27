@@ -1,0 +1,93 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+}
+
+/* Navbar */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: transparent;
+  transition: background 0.3s ease;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: inherit;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 5px 10px;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Hover effect */
+.nav-links li a:hover {
+  background: #fff;
+  color: #333;
+  border-radius: 4px;
+}
+
+/* Landing Section */
+.landing {
+  height: 100vh;
+  background: linear-gradient(135deg, #007bff, #00d4ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  color: #fff;
+  text-align: center;
+}
+
+/* Content Section */
+.content {
+  padding: 80px 30px;
+  background: #f4f4f4;
+  min-height: 100vh;
+}
+
+/* Scrolled Navbar */
+.scrolled {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
